@@ -17,6 +17,8 @@ body{
     z-index: 100;
     width: 60%;
     height: 100vh;
+    background-color: #fff;
+    /* transition: all 0.25s  linear; */
 }
 .menu a{
     color: #ABC6D6;
@@ -29,6 +31,30 @@ body{
     display: flex;
     flex-direction: column;
 }
+.menunavopt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    transition: all 0.25s linear;
+}
+
+.menunavopt:hover{
+    cursor: pointer;
+    background: #EFF6FB;
+
+}
+.menuactivenavopt{
+    background: #EFF6FB;
+}
+.menuactivenavopt a{
+    color: #000;
+}
+.menunavopt:hover a{
+    color: #000;
+}
+
 .main{
     overflow: hidden;
     width: 100vw;      
