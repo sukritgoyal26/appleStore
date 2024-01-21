@@ -12,8 +12,19 @@
   <body>
     <div class="main">
       <div class="back">
+        <div class="menu inactive" id="menu">
+          <div class="menuallopt">
+            <div class="menunavopt"><a href="#">Mac</a></div>
+            <div class="menunavopt"><a href="#">iPhone</a></div>
+            <div class="menunavopt"><a href="#">iPad</a></div>
+            <div class="menunavopt menuactivenavopt">
+              <a href="#">iWatch</a>
+            </div>
+            <div class="menunavopt"><a href="#"> Support</a></div>
+          </div>
+        </div>
         <div class="side-nav">
-          <img src="./images/Nav Menuicons.png" alt="" srcset="" />
+          <img src="./images/Nav Menuicons.png" onclick="menu()" srcset="" />
           <div class="socials">
             <img src="./images/Vectoricons.png" class="fb" alt="" />
             <img src="./images/Vectoricons-1.png" alt="" />
@@ -26,11 +37,13 @@
               <div class="logo">
                 <img src="./images/Logoicons.png" alt="" />
               </div>
-              <div class="navopt"><a href="#">Mac</a></div>
-              <div class="navopt"><a href="#">iPhone</a></div>
-              <div class="navopt"><a href="#">iPad</a></div>
-              <div class="navopt activenavopt"><a href="#">iWatch</a></div>
-              <div class="navopt"><a href="#"> Support</a></div>
+              <div class="allopt">
+                <div class="navopt"><a href="#">Mac</a></div>
+                <div class="navopt"><a href="#">iPhone</a></div>
+                <div class="navopt"><a href="#">iPad</a></div>
+                <div class="navopt activenavopt"><a href="#">iWatch</a></div>
+                <div class="navopt"><a href="#"> Support</a></div>
+              </div>
               <div class="search-box">
                 <input
                   type="text"
@@ -60,14 +73,16 @@
               </div>
               <div class="buynow"><button>Buy Now</button></div>
             </div>
-            <div class="hero-img">
-              <img src="./images/Watchwatch.png" alt="" />
-            </div>
-            <div class="scroll">
-              <div class="circle black"></div>
-              <div class="circle active-circle blue"></div>
-              <div class="circle aqua"></div>
-              <div class="circle pink"></div>
+            <div class="imgNscroll">
+              <div class="hero-img">
+                <img src="./images/Watchwatch.png" alt="" />
+              </div>
+              <div class="scroll">
+                <div class="circle black"></div>
+                <div class="circle active-circle blue"></div>
+                <div class="circle aqua"></div>
+                <div class="circle pink"></div>
+              </div>
             </div>
           </div>
           <footer>

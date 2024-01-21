@@ -10,7 +10,25 @@ body{
     background-color: #E5E5E5;
 
 }
-
+.menu{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: 60%;
+    height: calc(100vh - 80px);
+    background-color: #fff;
+}
+.menu a{
+    color: #ABC6D6;
+    text-decoration: none;
+}
+.menuallopt{
+    height: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 .main{
     overflow: hidden;
     width: 100vw;      
@@ -49,6 +67,9 @@ nav{
     justify-content: space-evenly;
     display: flex;
 }
+.logo img{
+    width: 3vw;
+}
 .opt a{
     text-decoration: none;
 }
@@ -58,24 +79,34 @@ nav{
     display: flex;
     gap: 10px;
 }
-
+.allopt{
+    gap: 3vw;
+    display: flex;
+}
 .navopt{
-    font-size: 2vh;
+    font-size: 1vw;
     font-weight: 500;
     width: 7.5vw;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* text-align: center; */
     height: 5vh;
     border-radius: 100px;
-    /* background-color: #000; */
+    transition: all linear 0.25s;
 }
 
+.navopt:hover{
+    background-color: #FFF;
+}
+.navopt:hover a{
+    color: #B6CCDA;
+    font-weight: 700;
+}
 .activenavopt{
     background-color: #FFF;
 }
+
 
 .navopt a{
     color: white;
@@ -121,9 +152,6 @@ nav{
 }
 
 .hero{
-    /* background-color: aqua; */
-    /* overflow: hidden; */
-    /* width: 100%; */
     margin-top: 10vh;
     width: calc(100vw - 100px);
     height: 65vh;
@@ -156,7 +184,7 @@ button{
     border-radius: 100px;
     border: 3px solid #FFF;
     color: white;
-    font-size: 3vh;
+    font-size: 2vw;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -168,12 +196,15 @@ button:hover{
     color: black;
     cursor: pointer;
 }
+.imgNscroll{
+    display: flex;
+}
 .hero-img{
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items:center;
-    width: 40%;
+    width: 90%;
 }
 .hero-img img{
     /* height: 80%; */
@@ -248,19 +279,15 @@ footer{
 .watch{
     /* width: 131px; */
     width: 8vw;
-    height: 70px;
-    height: 9vh;
+    height: 5vw;
     flex-shrink: 0;
     margin: 10px;
     background-color: black;
     border-radius: 10px;
 }
 .watch img{
-    width: 10vh;
+    width: 5vw;
     margin-left: 1vw;
-    /* margin-bottom: 500px; */
-    /* position: absolute; */
-    /* top: 80vh; */
 }
 .watch1{
     background: rgba(67, 69, 88, 0.60);
@@ -270,4 +297,107 @@ footer{
 }
 .watch3{
     background: rgba(249, 205, 196, 0.60);
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        display: block;
+    }
+    nav{
+        width: 100%;
+    }
+    .opt{
+        gap :10%;
+        justify-content: center;
+    }
+    .logo img{
+        width: 5vh;
+    }
+    .back{
+        border-radius: 25px;
+    }
+    .front{
+        /* display: none; */
+        width: 100vw;
+        height: calc(100vh - 80px);
+        margin: 0;
+        border-radius: 25px;
+    }
+    .allopt{
+        width: 0;
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .side-nav{
+        flex-direction: row;
+        /* background-color: #58d7c4; */
+        gap: 0;
+        margin: 0 5%;
+        padding: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;    
+        width: 90%;
+        position: absolute;
+        height: 97%;
+        justify-content: space-between;
+        align-items: end;
+    }
+    .socials{
+        flex-direction: row;
+    }
+    .content{
+        padding: 0;
+        width: 90%;
+        gap: 2vh;
+    }
+    button{
+        width: 35vw;
+        height: 5vh;
+        font-size: 2.5vh;
+    }
+    .hero-text h1 , .hero-text h2{
+        /* text-align: center; */
+        font-size: 4vh;
+    }
+    .imgNscroll{
+        height: 80%;
+    }
+    .hero{
+        /* justify-content: center; */
+        margin-top: 5vh;
+        height: 70vh;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .active{
+        display: block;
+    }
+    .inactive{
+        display: none;
+    }
+    .menunavopt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        width: 100%;
+    }
+
+    .menunavopt:hover{
+        background: #EFF6FB;
+
+    }
+    .menuactivenavopt{
+        background: #EFF6FB;
+    }
+    .menuactivenavopt a{
+        color: #000;
+    }
+    .menunavopt:hover a{
+        color: #000;
+    }
 }
