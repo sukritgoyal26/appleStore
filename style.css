@@ -13,10 +13,10 @@ body{
 .menu{
     display: none;
     position: absolute;
+    left: 100px;
     z-index: 100;
     width: 60%;
-    height: calc(100vh - 80px);
-    background-color: #fff;
+    height: 100vh;
 }
 .menu a{
     color: #ABC6D6;
@@ -378,6 +378,11 @@ footer{
     }
     .inactive{
         display: none;
+    }
+    .menu{
+        left: 0;
+    height: calc(100vh - 80px);
+
     }
     .menunavopt{
         display: flex;
