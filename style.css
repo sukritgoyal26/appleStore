@@ -150,6 +150,7 @@ nav{
 }
 .opt h1{
     font-size: 30px;
+    font-weight: 100;
     color: white;
 }
 #search-input{
@@ -165,6 +166,7 @@ nav{
 #search-input:focus {
     outline: none;
   }
+
   
 #search-input img{
     width: 50px;
@@ -219,7 +221,7 @@ button{
 }
 button:hover{
     background-color: white;
-    color: black;
+    color: #B6CCDA;
     cursor: pointer;
 }
 .imgNscroll{
@@ -242,9 +244,18 @@ button:hover{
     justify-content: center;
     align-items: center;
     width: 5%;
-    gap: 20px;
+    /* gap: 20px; */
 }
-
+.dots{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.dots span{
+    height: 2px;
+    width: 2px;
+    background-color: black;
+}
 .circle{
     /* margin: 50px; */
     height: 30px;
@@ -275,12 +286,17 @@ button:hover{
 
 .socials{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap:20px
 }
 .socials img{
     height: 28px;
     width: 28px;
+}
+#fb{
+    width: 14px;
 }
 
 .black{
@@ -298,22 +314,32 @@ button:hover{
 footer{
     /* height: 20vh; */
     display: flex;
+    gap: 2vw;
     align-items: center;
     padding-right: 5%;
     justify-content: flex-end;
 }
-.watch{
-    /* width: 131px; */
-    width: 8vw;
-    height: 5vw;
-    flex-shrink: 0;
-    margin: 10px;
-    background-color: black;
+.watch-parent{
+    width: 131px;
+    height: 70px;
     border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* gap: 2vw; */
 }
-.watch img{
-    width: 5vw;
-    margin-left: 1vw;
+.watch{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    flex-shrink: 0;
+    background-color: black;
+}
+.watch-parent img{
+    z-index: 44;
 }
 .watch1{
     background: rgba(67, 69, 88, 0.60);
